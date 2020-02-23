@@ -1,0 +1,17 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 1rem;
+}
+
+.laps {
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  font-size: 4rem;
+}

@@ -1,0 +1,13 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span></span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row class="selection-bar">
+    <mat-button-toggle-group value="{{ currentButton }}">
+      <mat-button-toggle routerLink="clock" value="clock">Clock</mat-button-toggle>
+      <mat-button-toggle routerLink="timer" value="timer">Timer</mat-button-toggle>
+      <mat-button-toggle routerLink="stopwatch" value="stopwatch">Stopwatch</mat-button-toggle>
+    </mat-button-toggle-group>
+  </mat-toolbar-row>
+</mat-toolbar>

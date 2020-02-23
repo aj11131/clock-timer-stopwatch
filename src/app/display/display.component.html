@@ -1,0 +1,26 @@
+<form [formGroup]="display" class="container" (ngSubmit)="onSubmit()">
+  <input
+  formControlName="hours"
+  type="number"
+  (input)="checkInput($event, 0, 99)">
+  <p>:</p>
+  <input
+  formControlName="minutes"
+  type="number"
+  (input)="checkInput($event, 0, 59)">
+  <p>:</p>
+  <input
+  formControlName="seconds"
+  type="number"
+  (input)="checkInput($event, 0, 59)">
+  <p *ngIf="displayInfo.millisecondMode">:</p>
+  <input
+  formControlName="milliseconds"
+  *ngIf="displayInfo.millisecondMode"
+  type="number">
+  <input
+  class="meridiem"
+  formControlName="meridiem"
+  *ngIf="displayInfo.clockMode"
+  type="text">
+</form>

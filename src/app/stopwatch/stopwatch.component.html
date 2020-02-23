@@ -1,0 +1,7 @@
+<app-display></app-display>
+<div class="buttons">
+  <button mat-raised-button mat-button-base color="accent" (click) = "onStartOrLap()">{{ !currentlyTiming ? 'Start' : 'Lap' }}</button>
+  <button mat-raised-button mat-button-base color="accent" (click) = "onStop()">Stop</button>
+  <button mat-raised-button mat-button-base color="accent" (click) = "onReset()">Reset</button>
+</div>
+<div class="laps" #laps></div>
