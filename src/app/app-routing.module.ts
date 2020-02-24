@@ -6,10 +6,10 @@ import { StopwatchComponent } from './stopwatch/stopwatch.component';
 
 
 const routes: Routes = [
-  { path: '', component: ClockComponent },
   { path: 'clock', component: ClockComponent },
   { path: 'timer', component: TimerComponent },
   { path: 'stopwatch', component: StopwatchComponent},
+  { path: '**', component: ClockComponent }
 ];
 
 @NgModule({
