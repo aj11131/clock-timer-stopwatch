@@ -29,7 +29,7 @@ export class ClockComponent implements OnInit, OnDestroy {
     let hours = this.currentTime.getHours();
     let meridiem;
     if (hours > 12) {
-      hours = 24 - hours;
+      hours = hours - 12;
       meridiem = 'PM';
     } else {
       meridiem = 'AM';
