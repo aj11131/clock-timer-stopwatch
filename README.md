@@ -1,3 +1,12 @@
+USAGE: A time app that includes a clock that shows the current time, a timer that accepts user input then counts to zero and beeps, and a stopwatch.
+
+Clock: Gets and displays the current time using the JavaScript Date object.
+
+Timer: Accepts user input and counts down to zero and then plays a beeping noise. The timer can be paused and canceled.
+
+Stopwatch: A typical stopwatch that can be started, stopped, and lap times can be recorded.
+
+
 # Clock
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
