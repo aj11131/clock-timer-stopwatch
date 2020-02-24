@@ -1,12 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatToolbar } from '@angular/material/toolbar';
-import { MatToolbarRow } from '@angular/material/toolbar';
-import { MatButton } from '@angular/material/button';
-import { MatButtonToggleGroup } from '@angular/material/button-toggle';
-import { MatButtonToggle } from '@angular/material/button-toggle';
-
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,11 +17,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    MatToolbar,
-    MatToolbarRow,
-    MatButton,
-    MatButtonToggle,
-    MatButtonToggleGroup,
     HeaderComponent,
     ClockComponent,
     TimerComponent,
@@ -33,6 +24,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     DisplayComponent
   ],
   imports: [
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatToolbarModule,
     MatRippleModule,
     BrowserModule,
     AppRoutingModule,
